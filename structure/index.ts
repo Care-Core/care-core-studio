@@ -12,6 +12,8 @@ export const structure = (S: StructureBuilder) =>
             .items([
               S.documentTypeListItem('productImage')
                 .title('Product Images'),
+              S.documentTypeListItem('categoryImage')
+                .title('Category Images'),
             ])
         ),
       S.listItem()
@@ -30,7 +32,7 @@ export const structure = (S: StructureBuilder) =>
       // Add any items that should be available at the root
       ...S.documentTypeListItems().filter(
         (listItem) =>
-          !['productImage', 'marketingPage', 'websiteHero'].includes(
+          !['productImage', 'categoryImage', 'marketingPage', 'websiteHero'].includes(
             listItem.getId() ?? ''
           )
       ),

@@ -53,14 +53,7 @@ export const productImageType = defineType({
       options: {
         layout: 'tags',
       },
-      description: 'Keywords to help match products to images (e.g., "b12", "vitamin", "injection")',
-    }),
-    defineField({
-      name: 'mdiOfferingIds',
-      title: 'MDI Offering IDs',
-      type: 'array',
-      of: [{ type: 'string' }],
-      description: 'Optional: Specific MDI offering IDs that should use this image',
+      description: 'Keywords to help find images (e.g., "b12", "vitamin", "injection")',
     }),
   ],
   preview: {
